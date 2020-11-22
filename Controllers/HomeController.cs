@@ -23,6 +23,16 @@ namespace CMPG323Project2.Controllers
             return View();
         }
 
+        public IActionResult logIn()
+        {
+            return View();
+        }
+
+        public IActionResult signUp()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
