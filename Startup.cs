@@ -8,14 +8,18 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using CMPG323Project2.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace CMPG323Project2
 {
     public class Startup
+
     {
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+
         }
 
         public IConfiguration Configuration { get; }
@@ -24,6 +28,9 @@ namespace CMPG323Project2
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            services.AddDbContext<MvcEmployeeContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("MvcEmployeeContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations;
 namespace Project2.Models
 {
 
-    public class EmployeeController
+    public class Employee
     {
 
         // info (personal)

@@ -23,12 +23,12 @@ namespace CMPG323Project2.Controllers
             return View();
         }
 
-        public IActionResult logIn()
+        public IActionResult LogIn()
         {
             return View();
         }
 
-        public IActionResult signUp()
+        public IActionResult SignUp()
         {
             return View();
         }

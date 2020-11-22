@@ -1,0 +1,233 @@
+﻿@model IEnumerable<Project2.Models.Employee>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.employeeName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.age)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ove18)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.education)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.educationField)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.gender)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.distanceFromHome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.workLifeBalace)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.maritalStatus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.overTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.businessTravel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.numCompaniesWorked)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.attrition)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.department)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.dailyRate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.empCount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.hourlyRate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.standardHours)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.jobInvolvement)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.jobLevel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.jobRole)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.monthlyIncome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.monthlyRate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.percentageSalaryHike)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.performanceRating)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.environmentSatisfaction)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.stockOptionlevel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.relationshipSatisfaction)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.totalWorkingYears)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.traningTimesLastYear)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.traningAtCompany)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.yearsInCurrentRole)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.yearsSinceLastpromotion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.yearsWithCurrentManager)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.employeeName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.age)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ove18)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.education)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.educationField)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.gender)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.distanceFromHome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.workLifeBalace)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.maritalStatus)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.overTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.businessTravel)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.numCompaniesWorked)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.attrition)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.department)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dailyRate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.empCount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.hourlyRate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.standardHours)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.jobInvolvement)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.jobLevel)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.jobRole)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.monthlyIncome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.monthlyRate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.percentageSalaryHike)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.performanceRating)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.environmentSatisfaction)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.stockOptionlevel)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.relationshipSatisfaction)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.totalWorkingYears)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.traningTimesLastYear)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.traningAtCompany)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.yearsInCurrentRole)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.yearsSinceLastpromotion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.yearsWithCurrentManager)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.employeeNumber">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.employeeNumber">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.employeeNumber">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
